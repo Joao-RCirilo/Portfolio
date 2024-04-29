@@ -3,12 +3,14 @@
     display: grid;
     gap: 24px;
     grid-template-rows: repeat(5, auto);
+    align-items: center;
     grid-template-areas: 
     "header"
     "experience"
     "about"
     "education"
     "works";
+    
 }
 
 @media (min-width: 768px){

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./header.scss"
+import { SocialButtons } from "../social-buttons/social-buttons";
 
 export function Header() {
   return (
@@ -14,11 +15,12 @@ export function Header() {
       </div>
 
       <div className="buttons">
+          <SocialButtons/>
           <button>Contact-me</button>
       </div>
       <Image
         src="/eu.jpg"
-        alt="Vercel Logo"
+        alt="A Dev Front-end"
         width={325}
         height={325}
         priority
