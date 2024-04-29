@@ -1,0 +1,57 @@
+.header{
+    display: grid;
+    flex-direction: column;
+    grid-area: header;
+    gap: 24px;   
+    grid-template-areas: 
+    "title"
+    "image"
+    "btn"
+    ;
+    /* "title image"
+    "btn btn"; */
+}
+
+
+img{
+    border-radius: 24px;
+    grid-area: image;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--text-primary);
+}
+
+h2{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+    color: var(--text-secondary);
+}
+
+button{
+    background: linear-gradient(90deg,  #00FF94 2.62%, #777CF4 93.38%);
+    border-radius: 24px;
+    width: 325px;
+    padding: 12px;
+    text-align: center;
+
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: none;
+    
+}
+
+.titles{
+    grid-area: title;
+}
+
+.buttons{
+    grid-area: btn;
+}

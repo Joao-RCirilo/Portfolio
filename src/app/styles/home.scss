@@ -1,0 +1,29 @@
+.container{
+    padding: 40px 30px;
+    display: grid;
+    gap: 24px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header"
+    "experience"
+    "about"
+    "education"
+    "works";
+}
+
+@media (min-width: 768px){
+    .container{
+        padding: 70px 60px;
+        height: 100vh;
+        grid-template-rows: fit-content(100%) ;
+        grid-template-columns: 60% 30% ;
+        align-items: center;
+        justify-items: start;
+        justify-content: space-between;
+        grid-template-areas: 
+        "header header"
+        "experience about"
+        "education language"
+        "works works";
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+  --text-primary: #00FF94;
+  --text-secondary: #b3b3b3;
+  --bg-primary: #2c2c2c2c;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  body{
+    background-color: var(--bg-primary);
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+  
